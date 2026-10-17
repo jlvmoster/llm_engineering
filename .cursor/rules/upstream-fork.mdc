@@ -1,0 +1,13 @@
+---
+description: Fork of ed-donner's llm_engineering; upstream always takes precedence
+alwaysApply: true
+---
+
+# Upstream fork
+
+This repository is a fork of https://github.com/ed-donner/llm_engineering (Ed Donner's LLM Engineering course).
+
+- `origin` is the user's fork: https://github.com/jlvmoster/llm_engineering
+- Treat https://github.com/ed-donner/llm_engineering as upstream.
+- Upstream takes precedence over any change on this fork. When the two disagree — content, structure, history, or behavior — follow upstream and discard or revert the fork's version.
+- When comparing history, proposing syncs, or attributing course material, use the upstream repo. Do not treat this checkout as the original project.

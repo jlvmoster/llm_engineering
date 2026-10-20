@@ -1,0 +1,293 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "47400e41b43f39a999fb43260970fa00",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"your-first-lab\">YOUR FIRST LAB</h1>\n<h3 id=\"please-read-this-section-this-is-valuable-to-get-you-prepared-even-if-its-a-long-read-its-important-stuff\">Please read this section. This is valuable to get you prepared, even if it's a long read -- it's important stuff.</h3>\n<h3 id=\"also-be-sure-to-read-readmemd\">Also, be sure to read <a href=\"../README.md\">README.md</a>!</h3>\n<h3 id=\"answers-to-the-most-common-questions\">Answers to the most common questions</h3>\n<span class=\"paragraph\"><a href=\"https://edwarddonner.com/avatar?q=54\" rel=\"noopener noreferrer\" target=\"_blank\">My Cursor looks different to yours (new splash screen)</a>\n<a href=\"https://edwarddonner.com/avatar?q=8\" rel=\"noopener noreferrer\" target=\"_blank\">Can I use Gemini or free models instead of OpenAI Yes!</a>\n<a href=\"https://edwarddonner.com/2024/11/13/llm-engineering-resources/\" rel=\"noopener noreferrer\" target=\"_blank\">Where are the course resources</a>\n<a href=\"https://edwarddonner.com/curriculum\" rel=\"noopener noreferrer\" target=\"_blank\">How does this course fit in with your others?</a>\n<a href=\"https://edwarddonner.com/avatar?q=2\" rel=\"noopener noreferrer\" target=\"_blank\">Can I take this course with no programming background?</a>\n<a href=\"https://edwarddonner.com/avatar?q=3\" rel=\"noopener noreferrer\" target=\"_blank\">What job can I get after taking this course?</a></span>\n<h2 id=\"your-first-frontier-llm-project\">Your first Frontier LLM Project</h2>\n<span class=\"paragraph\">By the end of this course, you will have built an autonomous Agentic AI solution with 7 agents that collaborate to solve a business problem. All in good time! We will start with something smaller...</span>\n<span class=\"paragraph\">Our goal is to code a new kind of Web Browser. Give it a URL, and it will respond with a summary. The Reader's Digest of the internet!!</span>\n<span class=\"paragraph\">Before starting, you should have completed the setup linked in the README.</span>\n<h3 id=\"if-youre-new-to-working-in-notebooks-also-known-as-labs-or-jupyter-lab\">If you're new to working in \"Notebooks\" (also known as Labs or Jupyter Lab)</h3>\n<span class=\"paragraph\">Welcome to the wonderful world of Data Science experimentation! Simply click in each \"cell\" with code in it, such as the cell immediately below this text, and hit Shift+Return to execute that cell. Be sure to run every cell, starting at the top, in order.</span>\n<span class=\"paragraph\">Please look in the <a href=\"../guides/01_intro.ipynb\">Guides folder</a> for all the guides.</span>\n<h2 id=\"i-am-here-to-help\">I am here to help</h2>\n<span class=\"paragraph\">If you have any problems at all, please do reach out.\nI'm available through the platform, or at <a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#100;&#64;&#101;&#100;&#119;&#97;&#114;&#100;&#100;&#111;&#110;&#110;&#101;&#114;&#46;&#99;&#111;&#109;\">&#101;&#100;&#64;&#101;&#100;&#119;&#97;&#114;&#100;&#100;&#111;&#110;&#110;&#101;&#114;&#46;&#99;&#111;&#109;</a>, or at <a href=\"https://www.linkedin.com/in/eddonner/\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.linkedin.com/in/eddonner/</a> if you'd like to connect (and I love connecting!)\nAnd I also have a <a href=\"https://youtube.com/@edward.donner\" rel=\"noopener noreferrer\" target=\"_blank\">YouTube channel with extra content</a>.\nAnd this is new to me, but I'm also trying out X at <a href=\"https://x.com/edwarddonner\" rel=\"noopener noreferrer\" target=\"_blank\">@edwarddonner</a> - if you're on X, please show me how it's done \ud83d\ude02</span>\n<h2 id=\"more-troubleshooting\">More troubleshooting</h2>\n<span class=\"paragraph\">Please see the <a href=\"../setup/troubleshooting.ipynb\">troubleshooting</a> notebook in the setup folder to diagnose and fix common problems. At the very end of it is a diagnostics script with some useful debug info.</span>\n<h2 id=\"if-this-is-old-hat\">If this is old hat!</h2>\n<span class=\"paragraph\">If you're already comfortable with today's material, please hang in there; you can move swiftly through the first few labs - we will get much more in depth as the weeks progress. Ultimately we will fine-tune our own LLM to compete with OpenAI!</span>\n<table style=\"margin: 0; text-align: left;\">\n    <tr>\n        <td style=\"width: 150px; height: 150px; vertical-align: middle;\">\n            <img src=\"../assets/important.jpg\" width=\"150\" height=\"150\" style=\"display: block;\" />\n        </td>\n        <td>\n            <h2 style=\"color:#900;\">Please read - important note</h2>\n            <span style=\"color:#900;\">The way I collaborate with you may be different to other courses you've taken. I prefer not to type code while you watch. Rather, I execute Jupyter Labs, like this, and give you an intuition for what's going on. My suggestion is that you carefully execute this yourself, <b>after</b> watching the lecture. Add print statements to understand what's going on, and then come up with your own variations. If you have a Github account, use this to showcase your variations. Not only is this essential practice, but it demonstrates your skills to others, including perhaps future clients or employers...</span>\n        </td>\n    </tr>\n</table>\n<table style=\"margin: 0; text-align: left;\">\n    <tr>\n        <td style=\"width: 150px; height: 150px; vertical-align: middle;\">\n            <img src=\"../assets/resources.jpg\" width=\"150\" height=\"150\" style=\"display: block;\" />\n        </td>\n        <td>\n            <h2 style=\"color:#f71;\">This code is a live resource - keep an eye out for my emails</h2>\n            <span style=\"color:#f71;\">I push updates to the code regularly. As people ask questions, I add more examples or improved commentary. As a result, you'll notice that the code below isn't identical to the videos. Everything from the videos is here; but I've also added better explanations and new models like DeepSeek. Consider this like an interactive book.<br/><br/>\n                I try to send emails regularly with important updates related to the course. You can find this in the 'Announcements' section of Udemy in the left sidebar. You can also choose to receive my emails via your Notification Settings in Udemy. I'm respectful of your inbox and always try to add value with my emails!\n            </span>\n        </td>\n    </tr>\n</table>\n<table style=\"margin: 0; text-align: left;\">\n    <tr>\n        <td style=\"width: 150px; height: 150px; vertical-align: middle;\">\n            <img src=\"../assets/business.jpg\" width=\"150\" height=\"150\" style=\"display: block;\" />\n        </td>\n        <td>\n            <h2 style=\"color:#181;\">Business value of these exercises</h2>\n            <span style=\"color:#181;\">A final thought. While I've designed these notebooks to be educational, I've also tried to make them enjoyable. We'll do fun things like have LLMs tell jokes and argue with each other. But fundamentally, my goal is to teach skills you can apply in business. I'll explain business implications as we go, and it's worth keeping this in mind: as you build experience with models and techniques, think of ways you could put this into action at work today. Please do contact me if you'd like to discuss more or if you have ideas to bounce off me.</span>\n        </td>\n    </tr>\n</table></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "2ca23a85ca66d3ba29c96fd287e4d4e2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"if-necessary-install-cursor-extensions\">If necessary, install Cursor Extensions</h3>\n<ol>\n<li>From the View menu, select Extensions</li>\n<li>Search for Python</li>\n<li>Click on \"Python\" made by \"ms-python\" and select Install if not already installed</li>\n<li>Search for Jupyter</li>\n<li>Click on \"Jupyter\" made by \"ms-toolsai\" and select Install if not already installed</li>\n</ol>\n<h3 id=\"next-select-the-kernel\">Next Select the Kernel</h3>\n<span class=\"paragraph\">Click on \"Select Kernel\" on the Top Right</span>\n<span class=\"paragraph\">Choose \"Python Environments...\"</span>\n<span class=\"paragraph\">Then choose the one that looks like <code>.venv (Python 3.12.x) .venv/bin/python</code> - it should be marked as \"Recommended\" and have a big star next to it.</span>\n<span class=\"paragraph\">Any problems with this? Head over to the troubleshooting.</span>\n<h3 id=\"note-youll-need-to-set-the-kernel-with-every-notebook\">Note: you'll need to set the Kernel with every notebook..</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "df2734d8d11a0d066f661a39087dc1ce",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "fac4e0e525462d167ab66e950cc6a6f5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"connecting-to-openai-or-ollama\">Connecting to OpenAI (or Ollama)</h1>\n<span class=\"paragraph\">The next cell is where we load in the environment variables in your <code>.env</code> file and connect to OpenAI.</span>\n<span class=\"paragraph\">If you'd like to use free Ollama instead, please see the README section \"Free Alternative to Paid APIs\", and if you're not sure how to do this, there's a full solution in the solutions folder (day1_with_ollama.ipynb).</span>\n<h2 id=\"troubleshooting-if-you-have-problems\">Troubleshooting if you have problems:</h2>\n<span class=\"paragraph\">If you get a \"Name Error\" - have you run all cells from the top down? Head over to the Python Foundations guide for a bulletproof way to find and fix all Name Errors.</span>\n<span class=\"paragraph\">If that doesn't fix it, head over to the <a href=\"../setup/troubleshooting.ipynb\">troubleshooting</a> notebook for step by step code to identify the root cause and fix it!</span>\n<span class=\"paragraph\">Or, contact me! Message me or email <a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#100;&#64;&#101;&#100;&#119;&#97;&#114;&#100;&#100;&#111;&#110;&#110;&#101;&#114;&#46;&#99;&#111;&#109;\">&#101;&#100;&#64;&#101;&#100;&#119;&#97;&#114;&#100;&#100;&#111;&#110;&#110;&#101;&#114;&#46;&#99;&#111;&#109;</a> and we will get this to work.</span>\n<span class=\"paragraph\">Any concerns about API costs? See my notes in the README - costs should be minimal, and you can control it at every point. You can also use Ollama as a free alternative, which we discuss during Day 2.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "58ebc9cf7fcb6af851800ba3613e1985",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "ca4853279d4451cca383615e16348862",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"lets-make-a-quick-call-to-a-frontier-model-to-get-started-as-a-preview\">Let's make a quick call to a Frontier model to get started, as a preview!</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "367e4c82fa712d640292b8709376a1f0",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "7c7bd90ad7691083c517bb9bd29db5b4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "bffdd7c2c31b8c786407b78ff2397457",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"ok-onwards-with-our-first-project\">OK onwards with our first project</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "951ab3d8245018d4d5b9a16072791280",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "0fce3d02886fab50ebe1ef5b20a05f63",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"types-of-prompts\">Types of prompts</h2>\n<span class=\"paragraph\">You may know this already - but if not, you will get very familiar with it!</span>\n<span class=\"paragraph\">Models like GPT have been trained to receive instructions in a particular way.</span>\n<span class=\"paragraph\">They expect to receive:</span>\n<span class=\"paragraph\"><strong>A system prompt</strong> that tells them what task they are performing and what tone they should use</span>\n<span class=\"paragraph\"><strong>A user prompt</strong> -- the conversation starter that they should reply to</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "17a8fe1e960c26d7be95bf580e967249",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "58c3b63d93b8e23e7a2b0ee1851e461f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "ee594b797c8a21d15bd5485f81dff59c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"messages\">Messages</h2>\n<span class=\"paragraph\">The API from OpenAI expects to receive messages in a particular structure.\nMany of the other APIs share this structure:</span>\n<span class=\"paragraph\"><div class=\"language-python codehilite\"><pre><span></span><code><span class=\"p\">[</span>\n    <span class=\"p\">{</span><span class=\"s2\">&quot;role&quot;</span><span class=\"p\">:</span> <span class=\"s2\">&quot;system&quot;</span><span class=\"p\">,</span> <span class=\"s2\">&quot;content&quot;</span><span class=\"p\">:</span> <span class=\"s2\">&quot;system message goes here&quot;</span><span class=\"p\">},</span>\n    <span class=\"p\">{</span><span class=\"s2\">&quot;role&quot;</span><span class=\"p\">:</span> <span class=\"s2\">&quot;user&quot;</span><span class=\"p\">,</span> <span class=\"s2\">&quot;content&quot;</span><span class=\"p\">:</span> <span class=\"s2\">&quot;user message goes here&quot;</span><span class=\"p\">}</span>\n<span class=\"p\">]</span>\n</code></pre></div>\nTo give you a preview, the next 2 cells make a rather simple call - we won't stretch the mighty GPT (yet!)</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "59969723b7aa1bb76e7fe70a172a1641",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "0a953ef6f74eae1b52b411098fb5a68c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"and-now-lets-build-useful-messages-for-gpt-41-mini-using-a-function\">And now let's build useful messages for GPT-4.1-mini, using a function</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "9525aed411c3034cf0350fb5bdc8d086",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "840af400f9f4628833c0b68a562a3332",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "7ac9c490766261b4339031f83d46ecfa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"time-to-bring-it-together-the-api-for-openai-is-very-simple\">Time to bring it together - the API for OpenAI is very simple!</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "9d88e85b7c906700aa697c0d2c51113c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "a626bcb7378e5099cfa11d744bceca8d",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "6ba8e727dce381492e055c14465b1ac1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "0f747d51532d5df068118567eecfd7c4",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "9cf9688ac3a1479ede3b72506cbadc3c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"lets-try-more-websites\">Let's try more websites</h1>\n<span class=\"paragraph\">Note that this will only work on websites that can be scraped using this simplistic approach.</span>\n<span class=\"paragraph\">Websites that are rendered with Javascript, like React apps, won't show up. See the community-contributions folder for a Selenium implementation that gets around this. You'll need to read up on installing Selenium (ask ChatGPT!)</span>\n<span class=\"paragraph\">Also Websites protected with CloudFront (and similar) may give 403 errors - many thanks Andy J for pointing this out.</span>\n<span class=\"paragraph\">But many websites will work just fine!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "57da824a332d1dcb7ba2a39200f9a80d",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "9b7d6aa2657306edc8c12b7093d1f4ac",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "94b244f36a12bf74c13d6b84ba608046",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><table style=\"margin: 0; text-align: left;\">\n    <tr>\n        <td style=\"width: 150px; height: 150px; vertical-align: middle;\">\n            <img src=\"../assets/business.jpg\" width=\"150\" height=\"150\" style=\"display: block;\" />\n        </td>\n        <td>\n            <h2 style=\"color:#181;\">Business applications</h2>\n            <span style=\"color:#181;\">In this exercise, you experienced calling the Cloud API of a Frontier Model (a leading model at the frontier of AI) for the first time. We will be using APIs like OpenAI at many stages in the course, in addition to building our own LLMs.\n\nMore specifically, we've applied this to Summarization - a classic Gen AI use case to make a summary. This can be applied to any business vertical - summarizing the news, summarizing financial performance, summarizing a resume in a cover letter - the applications are limitless. Consider how you could apply Summarization in your business, and try prototyping a solution.</span>\n        </td>\n    </tr>\n</table>\n\n<table style=\"margin: 0; text-align: left;\">\n    <tr>\n        <td style=\"width: 150px; height: 150px; vertical-align: middle;\">\n            <img src=\"../assets/important.jpg\" width=\"150\" height=\"150\" style=\"display: block;\" />\n        </td>\n        <td>\n            <h2 style=\"color:#900;\">Before you continue - now try yourself</h2>\n            <span style=\"color:#900;\">Use the cell below to make your own simple commercial example. Stick with the summarization use case for now. Here's an idea: write something that will take the contents of an email, and will suggest an appropriate short subject line for the email. That's the kind of feature that might be built into a commercial email tool.</span>\n        </td>\n    </tr>\n</table></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "5f55f5990e46261a84763cd60a739f42",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "845cef269308e77bc48c53b8449d8436",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"an-extra-exercise-for-those-who-enjoy-web-scraping\">An extra exercise for those who enjoy web scraping</h2>\n<span class=\"paragraph\">You may notice that if you try <code>display_summary(\"https://openai.com\")</code> - it doesn't work! That's because OpenAI has a fancy website that uses Javascript. There are many ways around this that some of you might be familiar with. For example, Selenium is a hugely popular framework that runs a browser behind the scenes, renders the page, and allows you to query it. If you have experience with Selenium, Playwright or a similar browser automation framework, then feel free to implement an alternative version of the scraping functions in <code>scraper.py</code> (or in a separate module) using one of these tools. In the community-contributions folder, you'll find examples contributed by other students, including a Selenium implementation (thank you!)</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NCOB",
+      "code_hash": "0a7946bb136c92ddb915d211395dad69",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"sharing-your-code\">Sharing your code</h1>\n<span class=\"paragraph\">I'd love it if you share your code afterwards so I can share it with others! You'll notice that some students have already made changes (including a Selenium implementation) which you will find in the community-contributions folder. If you'd like add your changes to that folder, submit a Pull Request with your new versions in that folder and I'll merge your changes.</span>\n<span class=\"paragraph\">If you're not an expert with git (and I am not!) then I've given you complete instructions in the guides folder, guide 3, and pasting here:</span>\n<span class=\"paragraph\">Here's the overall steps involved in making a PR and the key instructions:\n<a href=\"https://edwarddonner.com/pr\" rel=\"noopener noreferrer\" target=\"_blank\">https://edwarddonner.com/pr</a></span>\n<span class=\"paragraph\">Please check before submitting:</span>\n<ol>\n<li>Your PR only contains changes in community-contributions (unless we've discussed it)</li>\n<li>All notebook outputs are clear</li>\n<li>Less than 2,000 lines of code in total, and not too many files</li>\n<li>Don't include unnecessary test files, or overly wordy README or .env.example or emojis or other LLM artifacts!</li>\n</ol>\n<span class=\"paragraph\">Thanks so much!</span>\n<span class=\"paragraph\">Detailed steps here:</span>\n<span class=\"paragraph\"><a href=\"https://chatgpt.com/share/6873c22b-2a1c-8012-bc9a-debdcf7c835b\" rel=\"noopener noreferrer\" target=\"_blank\">https://chatgpt.com/share/6873c22b-2a1c-8012-bc9a-debdcf7c835b</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
